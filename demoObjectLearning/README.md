@@ -1,5 +1,4 @@
-Package containing the **iCub object learning demo** which consists in training the robot to recognize unknown objects. The demo works through vocal command given using a microphone.
-The following package has been tested succesfully on a Ubuntu 14.04 LTS.
+Package containing the **iCub object learning demo** which consists in training the robot to recognize unknown objects. The demo works through vocal command given using a microphone. The following package has been tested successfully on a Ubuntu 14.04 LTS. The demo uses some computer vision modules built for the [Deepgaze project](https://github.com/mpatacchiola/deepgaze).
 
 Installation
 -------------
