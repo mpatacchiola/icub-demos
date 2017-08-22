@@ -1,0 +1,21 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for iCub robot
+ * using other grammar rules within a grammar rule.
+ * the OR "|" operator.
+ * the grouping "(...)" operator.
+ * the optional grouping "[...]" operator, means that those words are optional.
+ * the zero-or-many "*" (called Kleene star) operator.
+ * a probability (e.g., "/10/ open" is more likely than "/2/ close").
+ */
+
+grammar icub;
+
+public <basicCmd> = <start> <action> <target>;
+public <complexCmd> = <start> <action> <target> <object> <end>;
+<start> = [/5/  hey |/25/  i cub |/5/  robot ];
+<action> = (learn | forget | this is a | find the | search the | look | what | stop | online | save | how are);
+<target> = (ball | cup | book | dog | chair | shoe | table | cube | at me | is this | detection | you);
+<object> = [ at | is | the] [me | table | down | left | this | that | object];
+<end> = [ please | thanks ];
