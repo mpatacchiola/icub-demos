@@ -13,7 +13,7 @@ Install different utilities such as **Sox** a command line tool for audio manage
 `sudo apt-get install sox libsox-fmt-all alsa-utils lame`
 
 
-Installing Yarp (optional)
+Install Yarp (optional)
 --------------------------
 
 This procedure may not be required if the files `yarp.py` and `_yarp.so` (included in the package) work correctly. Skip this part and go back only if you get an error when importing yarp in python.
@@ -48,7 +48,7 @@ If you have problem with the export then you can copy the two files directly ins
 In this demo I provide the two files compiled in Ubuntu 14.04 (64 bit).
 
 
-Installing iCub simulator (optional)
+Install iCub simulator (optional)
 ------------------------------------
 
 This part is not required if the simulator is already installed or if you work only with the real robot.
@@ -95,7 +95,7 @@ DICTIONARY_PATH = "./sphinx/data/icub.dic"
 GRAMMAR_PATH = "./sphinx/data/icub.gram"
 ```
 
-The flag `ROOT_FOLDER` should point to the real robot `./icub` or to the simulated one `/icubSim`.
+The flag `ROOT_FOLDER` should point to the real robot `/icub` or to the simulated one `/icubSim`.
 If you run the code inside the `demoObjectLearning` folder you do not need to setup the path location of the folders starting with `./` prefix. The `HARDDEV` ID can be obtained from terminal typing `arecord --list-devices`. If a microphone is connected to the machine then the ID is returned.
 The configuration requires a file called `acapela_config.csv` containing the parameters of an Acapela speech syntethizer account (trial free). You can register at [http://vaas.acapela-group.com/VaaS/index.php](http://vaas.acapela-group.com/VaaS/index.php). The CSV file must contain the following parameters:
 
@@ -119,7 +119,7 @@ If everything is installed properly and the configuration variables and files po
 python main.py
 ```
 
-The robot should say the sentence "I'm ready!". The interaction with the robot works through three keys which can be pressed to start/stop some routines. Attention: to allow the script to catch the key pressed is necessary to **select the main window** which is showing the robot camera. This windows uses the OpenCV method `cv2.waitKey()` in order to record the key pressed. This is a list of the available commands:
+The robot should say the sentence "I'm ready!". Moreover you should see a window containing the video stream from one of the iCub eys. The interaction with the robot works through three keys which can be pressed to start/stop some routines. Attention: to allow the script to catch the key pressed is necessary to **select the main window** (the window that is showing the robot camera stream). This windows uses the OpenCV method `cv2.waitKey()` in order to record the key pressed. This is a list of the available commands:
 
 - Button (q)uit stops everything and exit
 - Button (f)orce stops object tracking
