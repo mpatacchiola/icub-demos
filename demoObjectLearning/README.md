@@ -12,10 +12,10 @@ Install different utilities such as **Sox** a command line tool for audio manage
 `sudo apt-get install sox libsox-fmt-all alsa-utils lame`
 
 
-Install Yarp (optional)
+Install Yarp
 --------------------------
 
-This procedure may not be required if the files `yarp.py` and `_yarp.so` (included in the package) work correctly. Skip this part and go back only if you get an error when importing yarp in python.
+This procedure is not required if the files `yarp.py` and `_yarp.so` (included in this package) work correctly. The two files included with this package have been compiled for Ubuntu 14.04 (intel 64 bit) and they may not work on your system. If you get an error when importing YARP in python (running the file `main.py`) it means that is necessary to get the compiled files from your machine and replace the one included in the package. The files are produced whit the installation of the [YARP](http://www.yarp.it/) Python bindings. The following procedure allows compiling YARP and enable the Python binsidngs:
 
 ```
 sudo apt-get install git cmake cmake-curses-gui libgsl0-dev libace-dev libreadline-dev
